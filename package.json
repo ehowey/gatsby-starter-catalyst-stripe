@@ -1,0 +1,52 @@
+{
+  "name": "gatsby-starter-catalyst-stripe",
+  "description": "Gatsby Starter: Gatsby-Theme-Catalyst-Stripe",
+  "version": "0.0.6",
+  "private": true,
+  "author": "Eric Howey <eric@erichowey.dev>",
+  "workspaces": {
+    "nohoist": [
+      "stripe",
+      "*use-shopping-cart",
+      "@stripe/stripe-js",
+      "@sanity/client",
+      "dollars-to-cents"
+    ]
+  },
+  "dependencies": {
+    "gatsby": "^2.24.58",
+    "@stripe/stripe-js": "^1.11.0",
+    "@sanity/client": "^2.1.4",
+    "dollars-to-cents": "^1.0.3",
+    "stripe": "^8.129.0",
+    "use-shopping-cart": "^2.3.0",
+    "gatsby-theme-catalyst-stripe": "*",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-starter",
+    "gatsby-plugin"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ehowey/gatsby-starter-catalyst-core"
+  },
+  "bugs": {
+    "url": "https://github.com/ehowey/gatsby-theme-catalyst/issues"
+  }
+}
